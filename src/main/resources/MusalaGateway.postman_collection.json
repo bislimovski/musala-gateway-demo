@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "40689ba4-d9a1-4a53-8c2c-b4269a05ea57",
+		"name": "MusalaGateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Main",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateways - GetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateways - GetById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateways - Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serialNumber",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Ivan4",
+							"type": "text"
+						},
+						{
+							"key": "ipAddress",
+							"value": "192.1.1.1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateways - Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serialNumber",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Ivan2",
+							"type": "text"
+						},
+						{
+							"key": "ipAddress",
+							"value": "192.1.1.1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateways - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/gateways/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripherals - GetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways/2/peripherals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"2",
+						"peripherals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripherals - GetOne",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways/2/peripherals/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"2",
+						"peripherals",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripherals - Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "uid",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "vendor",
+							"value": "IvanVendor4",
+							"type": "text"
+						},
+						{
+							"key": "dateCreated",
+							"value": "24.01.2019",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "gateway",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways/2/peripherals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"2",
+						"peripherals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripherals - Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "vendor",
+							"value": "IvanVendor5",
+							"type": "text"
+						},
+						{
+							"key": "dateCreated",
+							"value": "24.02.2019",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "gateway",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8090/gateways/2/peripherals/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"2",
+						"peripherals",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripherals - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8090/gateways/2/peripherals/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"gateways",
+						"2",
+						"peripherals",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
